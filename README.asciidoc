@@ -1,0 +1,12 @@
+sbtAME
+======
+
+Sample sbt project that generates `java.lang.AbstractMethodError`
+
+.Reproduce
+* Execute `sbt run` to see expected behaviour
+* Execute `sbt test:run` to get `AbstractMethodError`
+
+.Details
+
+Both 'src/main/scala/App.scala' and 'src/test/scala/App.scala' have the same content. To my surprise the first runs without errors and the second produce aforementioned error.
